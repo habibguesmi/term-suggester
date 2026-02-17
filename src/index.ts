@@ -1,11 +1,10 @@
 import { SuggestionEngine } from "./suggestion-engine";
 
 const words = ["gros", "gras", "graisse", "agressif", "go", "ros", "gro"];
-
 const engine = new SuggestionEngine(words);
 
-console.log(engine.getSuggestions("gros", 2)); // res : ["gros", "gras"]
-console.log(engine.getSuggestions("gras", 3)); // res : [ 'gras', 'gros', 'graisse' ]
-console.log(engine.getSuggestions("gros", 10)); // res : [ 'gros', 'gras', 'graisse', 'agressif' ]
-console.log(engine.getSuggestions("zzz", 3)); // res : []
-console.log(engine.getSuggestions("", 3)); // res : []
+console.log("Suggestions for 'gros' (2):", engine.getSuggestions("gros", 2));
+console.log("Suggestions for 'gras' (3):", engine.getSuggestions("gras", 3));
+console.log("Suggestions for 'gros' (10):", engine.getSuggestions("gros", 10));
+console.log("Suggestions for 'zzz' (3):", engine.getSuggestions("zzz", 3));
+console.log("Suggestions for empty term:", engine.getSuggestions("", 3));

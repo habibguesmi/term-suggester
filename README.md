@@ -20,9 +20,17 @@ Il retourne les mots les plus proches d’un terme donné selon :
 
 ## 🛠 Installation
 
-1. Cloner le dépôt
+Cloner le dépôt
 
 ```bash
 git clone <URL_DU_REPO>
 cd term-suggester
 ```
+
+installation (npm install)
+
+build (npm run build)
+
+test (npm test)
+
+start (npm start)

@@ -34,8 +34,7 @@ export class SuggestionEngine {
               lengthDifference: Math.abs(word.length - term.length)
             };
           })
-          // Garder uniquement les mots avec au moins une lettre similaire
-          .filter(item => item.score < term.length)
+          
           // Tri : score -> proximité longueur -> ordre alphabétique
           .sort((a, b) => {
             if (a.score !== b.score) return a.score - b.score;
